@@ -1,0 +1,188 @@
+/* inline
+internal
+external */
+body {
+  color: white;
+  margin: 0px;
+  background-image: url("nature.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+
+.para1 {
+  text-align: center;
+  font-family: "Press Start 2P", system-ui, "consolas", sans-serif;
+  font-weight: 400; /*bold */
+  font-style: normal;
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: double;
+  border-left-width: 10px;
+  padding: 20px 5px;
+}
+
+
+.bordr {
+  border-style: outset;
+  border-width: 5px;
+  border-color: gold;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+/* Image part  */
+
+
+.img-part {
+  /* background: linear-gradient(skyblue, lightgreen); */
+  background: linear-gradient(to top, skyblue, lightgreen);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* margin */
+
+
+#box1 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: green;
+  /* margin: 40px 0px; */
+  /* margin-right: auto; */
+  /* margin-left: auto; */
+  /* margin-left: 50%; */
+  padding: 15px;
+}
+
+
+#box2 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: red;
+}
+
+
+/* Float  */
+#floatP {
+  margin-bottom: 200px;
+}
+.fb {
+  border: 5px solid red;
+  width: 50px;
+  height: 100px;
+  float: left; /*right*/
+}
+
+
+/* Position  */
+
+
+#b1 {
+  border: 1px solid;
+  height: 300px;
+  width: 300px;
+  background-color: skyblue;
+  position: fixed;
+  top: 0%;
+  right: 0px;
+  /* top: 50px;
+  left: 50px; */
+}
+
+
+#b2 {
+  border: 1px solid;
+  height: 100px;
+  width: 100px;
+  background-color: greenyellow;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+
+/* pseudo-class */
+
+
+a:link {
+  color: red;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: tomato;
+}
+a:active {
+  color: green;
+}
+
+
+button:hover {
+  background-color: lightblue;
+}
+
+
+li:nth-child(1) {
+  /*1, even, odd, 3n, 5n+3*/
+  background-color: yellow;
+}
+
+
+/* Shadow */
+#shad {
+  text-shadow: 5px 5px 5px green;
+  box-shadow: 5px 5px 5px blueviolet;
+}
+
+
+/* Transform */
+
+
+#T1 {
+  border: 4px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 225px;
+  text-align: center;
+  background: lightskyblue;
+
+
+  transform: translateX(50px); /*-50px*/
+  transform: translateY(50px);
+  transform: rotate(90deg);
+  transform: scaleX(3);
+  transform: skew(45deg);
+}
+
+
+/* Animation */
+#an1 {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  background: red;
+  font-size: 225px;
+  text-align: center;
+  animation: 3s linear 0s infinite running mySlide;
+}
+
+
+@keyframes mySlide {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
